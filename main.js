@@ -27,3 +27,19 @@ console.log(a);
 a = a+3;
 a = a/2;
 console.log(a);
+
+//目前網頁通用版本: HTML5 ， CSS3 ， JS ES6
+
+//++ 遞增1 、 -- 遞減1  (遞增、遞減不需要指定)
+var e = 5;
+e++;
+console.log(e);
+e--;
+console.log(e);  //(e+1) -1
+
+// ES6 指數符號(平方)**
+var f =3;
+f = f**2;     // f的2次方
+console.log(f);
+f = f**3;     // (f的2次方)3次方
+console.log(f);
