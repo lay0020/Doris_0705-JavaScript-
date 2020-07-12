@@ -221,13 +221,30 @@ score.onchange = ()=>{
 
 // 迴圈 for
 // 語法
-// for (初始值 ; 條件-布林值 ;迭代器-迴圈結束會執行的區塊){}
+// for (初始值; 條件-布林值; 迭代器-迴圈結束會執行的區塊) {}
 
-// 初始值:迴圈開始的值
-// 條  件:迴圈會執行的條件-當條件為true執行,false 迴圈結束
-// 迭代器:初始值處理 - 遞增 ++
+// 初始值：迴圈開始的值
+// 條　件：迴圈會執行的條件 - 當條件為 true 執行，false 結束迴圈
+// 迭代器：初始值處理 - 遞增 ++
 
-for (let i = 0; i < 50.; i++) {
-    console.log("迴圈:"+ i);
-    
+for (let i = 0; i < 10; i++) {
+    console.log("迴圈：" + i);
+}
+
+// 陣列
+var products = ["冰美式", "卡布奇諾", "摩卡"];
+
+// products.length 陣列.長度(數量) 3
+
+for (let i = 0; i < products.length; i++) {
+    console.log(products[i]);
+}
+
+// 透過類別取得複數元素 - 結果為陣列
+var ps = document.getElementsByClassName("product");
+
+console.log(ps);
+
+for (let i = 0; i < ps.length; i++) {
+    ps[i].innerText = products[i];
 }
