@@ -188,9 +188,46 @@ if (boolTest) {
     console.log("當布林值為false");   
 }
 
+
+
+// 如果 分數 >=60 : 及格
+// 如果 分數 >=40 : 補考
+// 如果 分數 : 被當
 var score = document.getElementById("score");
 var result = document.getElementById("result");
 
+
+// 順序不可變動 if 先 再來 else if (可以設定無限多個條件) 最後 else  
+
 score.onchange = ()=>{
-    result.innerText = "變更中...";
+   var s = parseInt(score.value);
+
+   if (s >=60){
+       result.innerText = "分數:"+s+"-及格";
+   }
+
+   else if (s >=50){
+    result.innerText = "分數:"+s+"-補考";
+    }
+
+    else if (s >=40){
+        result.innerText = "分數:"+s+"-補考2";
+        }
+
+    else {
+    result.innerText = "分數:"+s+"-被當";
+    }       
+}
+
+// 迴圈 for
+// 語法
+// for (初始值 ; 條件-布林值 ;迭代器-迴圈結束會執行的區塊){}
+
+// 初始值:迴圈開始的值
+// 條  件:迴圈會執行的條件-當條件為true執行,false 迴圈結束
+// 迭代器:初始值處理 - 遞增 ++
+
+for (let i = 0; i < 50.; i++) {
+    console.log("迴圈:"+ i);
+    
 }
