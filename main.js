@@ -169,3 +169,28 @@ console.log(true || true);          // t
 console.log(true || false);         // t
 console.log(false || true);         // t
 console.log(false || false);        // f
+
+// 判斷式 if
+// 語法 Syntax
+// if (布林值) {當布林值為 true 會執行}
+if (true) {
+    console.log("我是判斷式");
+}
+
+// 判斷式 else否則
+// if (布林值) {當布林值為 true 會執行}
+// else {當布林值為 false 會執行}
+var boolTest = false;
+
+if (boolTest) {
+    console.log("當布林值為ture");
+} else {
+    console.log("當布林值為false");   
+}
+
+var score = document.getElementById("score");
+var result = document.getElementById("result");
+
+score.onchange = ()=>{
+    result.innerText = "變更中...";
+}
