@@ -248,3 +248,49 @@ console.log(ps);
 for (let i = 0; i < ps.length; i++) {
     ps[i].innerText = products[i];
 }
+
+// 常數 const (constance)
+// 不能變更
+
+const pi = 3.14159;
+
+//pi = 4.123456;   //錯誤
+//pi = pi + 10;    //錯誤 
+
+
+// let 與 Var 差異
+// let 在同樣的區塊內(同階層內)不能重複-安全  //可用{}做包覆
+//只在區塊內有效
+
+// JS var 可重複名稱
+var countA = 10;
+var countA = 7;
+
+//let countA=5;  //let 重複名稱遊覽器顯示錯誤
+
+//使用{}包覆-表不同區塊
+{
+let countA = 5;
+console.log(countA);
+}
+//區塊外
+console.log(countA);
+
+
+var countB = 99;
+{
+    var countB = 77;
+}
+console.log(countB);  //得出數字77
+//Var變數 會因為區塊內設定而改變
+
+
+let countC = 99;
+{
+    let countC = 77;
+    console.log(countC); //得出數字77，
+    //let只在{}區塊內有作用
+}
+
+console.log(countC);  //得出數字99
+//let 只在區塊內有效;區塊外{}外無效
